@@ -34,20 +34,11 @@ color: #E6E6E6;
 position: relative;
 letter-spacing: 1.5px;
 text-decoration: none;
-padding:0 20px;
+margin: 24px;
 cursor: pointer;
-&:after{
-    content: "";
-    position: absolute;
-    background-color: #FED530;
-    height: 4px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-&:hover::after{
-  width: 100%;
+
+&:hover{
+  border-bottom: 4px solid #FED530;
 }
 `
 
