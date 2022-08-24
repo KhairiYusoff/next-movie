@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styled from 'styled-components'
 import { MdOutlineAccessTime } from "react-icons/md";
-import { GrView } from "react-icons/gr";
+
 
 const Container = styled.div`
 background-color: #333333;
@@ -18,20 +18,23 @@ justify-content: space-between;
 align-items: center;
 `
 
-const Release = styled.h1`
+const Release = styled.h3`
+font-size: 48px;
 font-weight: 500;
-letter-spacing: 2px;
+line-height: 64px;
 `
 
-const ViewMore = styled.h3`
+const ViewMore = styled.h5`
 color: #FED530;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
 `
 
 const MainMovie = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
-
 `
 
 const MainLeft = styled.div`
@@ -131,9 +134,6 @@ const Bottom = styled.div`
 margin-left: 24px;
 `
 
-
-
-
 const Movie = () => {
     return (
         <Container>
@@ -152,7 +152,7 @@ const Movie = () => {
                                     <Time>1hr24mins</Time>
                                 </TimeContainer>
                                 <ViewsContainer>
-                                    <GrView color="white" />
+                                    <Image src="/../public/Group.png" width={20} height={20} />
                                     <Views>21.3k views</Views>
                                 </ViewsContainer>
                             </Stats>
@@ -168,7 +168,7 @@ const Movie = () => {
                                     <Time>1hr24mins</Time>
                                 </TimeContainer>
                                 <ViewsContainer>
-                                    <GrView color="white" />
+                                    <Image src="/../public/Group.png" width={20} height={20} />
                                     <Views>21.3k views</Views>
                                 </ViewsContainer>
                             </Stats>
@@ -186,7 +186,7 @@ const Movie = () => {
                                     <Time>1hr24mins</Time>
                                 </TimeContainer>
                                 <ViewsContainer>
-                                    <GrView color="white" />
+                                    <Image src="/../public/Group.png" width={20} height={20} />
                                     <Views>21.3k views</Views>
                                 </ViewsContainer>
                             </Stats>
@@ -202,7 +202,7 @@ const Movie = () => {
                                     <Time>1hr24mins</Time>
                                 </TimeContainer>
                                 <ViewsContainer>
-                                    <GrView color="white" />
+                                    <Image src="/../public/Group.png" width={20} height={20} />
                                     <Views>21.3k views</Views>
                                 </ViewsContainer>
                             </Stats>
@@ -218,7 +218,7 @@ const Movie = () => {
                                     <Time>1hr24mins</Time>
                                 </TimeContainer>
                                 <ViewsContainer>
-                                    <GrView color="white" />
+                                    <Image src="/../public/Group.png" width={20} height={20} />
                                     <Views>21.3k views</Views>
                                 </ViewsContainer>
                             </Stats>

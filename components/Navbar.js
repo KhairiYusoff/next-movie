@@ -13,8 +13,11 @@ align-items: center;
 padding: 0 5%;
 `
 
-const Logo = styled.h1`
-
+const Logo = styled.h4`
+color: #FFFFFF;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
 `
 
 const Menu = styled.div`
@@ -24,6 +27,10 @@ align-items: center;
 `
 
 const MenuItems = styled.a`
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+color: #E6E6E6;
 position: relative;
 letter-spacing: 1.5px;
 text-decoration: none;
@@ -51,8 +58,12 @@ align-items: center;
 padding: 10px;
 `
 
-const RightItems = styled.div`
+const RightItems = styled.h6`
 margin-left: 15px;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
 `
 
 const RightCircle = styled.div`
@@ -65,6 +76,7 @@ margin-left: 15px;
 
 const SearchIcon = styled.div`
 cursor: pointer;
+margin-right: 30px;
 `
 const Navbar = () => {
     return (
