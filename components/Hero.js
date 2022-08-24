@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Image from 'next/image'
 
 
+
 const Container = styled.div`
 background: linear-gradient(270deg, #000000 -2.92%, rgba(0, 0, 0, 0) 100%);
 margin: 0 auto;
@@ -22,7 +23,11 @@ const BigCircle = styled.div`
 position: relative;
 width: 274px;
 height: 274px;
-border: solid yellow;
+border-top: 2px solid #808080;
+border-left: 4px solid #FED530;
+border-right: 4px solid #FED530;
+border-bottom: 4px solid #FED530;
+transform: rotate(45deg);
 border-radius: 50%;
 margin: 0 auto;
 `
@@ -36,6 +41,15 @@ border-radius: 50%;
 top: 50%;
 left: 50%;
 margin: -60px 0 0 -60px;
+`
+
+const ImageContainer = styled.div`
+position: absolute;
+width: 60px;
+height: 60px;
+top: 50%;
+left: 50%;
+margin: -30px 0 0 -30px;
 `
 
 const Right = styled.div`
@@ -64,7 +78,9 @@ const Hero = () => {
                 <Circle>
                     <BigCircle>
                         <SmallCircle>
-                            <Image src="/..public/play.png" width="20px" height="20px" />
+                            <ImageContainer>
+                                <Image src="/..public/Image27.png" width="20px" height="20px" />
+                            </ImageContainer>
                         </SmallCircle>
                     </BigCircle>
                 </Circle>
@@ -74,7 +90,6 @@ const Hero = () => {
                         only for your entertainments. No hidden charges or disturbing ads.</Desc>
                 </Right>
             </Wrapper>
-
         </Container>
     )
 }
