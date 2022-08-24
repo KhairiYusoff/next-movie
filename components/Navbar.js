@@ -1,13 +1,15 @@
 import styled from "styled-components"
 
 const Container = styled.div`
-background: linear-gradient(270deg, #000000 -2.92%, rgba(0, 0, 0, 0) 100%);
+background: #333333;
+margin: 0 auto;
 `
 
 const Nav = styled.div`
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
+padding: 0 5%;
 `
 
 const Logo = styled.h1`

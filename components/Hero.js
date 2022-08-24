@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
+import { FiPlay } from "react-icons/fi";
 
 
 
 const Container = styled.div`
-background: linear-gradient(270deg, #000000 -2.92%, rgba(0, 0, 0, 0) 100%);
+background: #333333;
 margin: 0 auto;
 `
 const Wrapper = styled.div`
@@ -43,14 +44,6 @@ left: 50%;
 margin: -60px 0 0 -60px;
 `
 
-const ImageContainer = styled.div`
-position: absolute;
-width: 60px;
-height: 60px;
-top: 50%;
-left: 50%;
-margin: -30px 0 0 -30px;
-`
 
 const Right = styled.div`
 flex: 5;
@@ -62,6 +55,7 @@ line-height: 96px;
 font-weight: 700;
 width: 600px;
 margin: 0;
+letter-spacing: 2px;
 `
 
 const Desc = styled.p`
@@ -69,6 +63,7 @@ font-size: 16px;
 line-height: 32px;
 font-weight: 400;
 width: 600px;
+letter-spacing: 2px;
 `
 
 const Hero = () => {
@@ -78,9 +73,6 @@ const Hero = () => {
                 <Circle>
                     <BigCircle>
                         <SmallCircle>
-                            <ImageContainer>
-                                <Image src="/..public/Image27.png" width="20px" height="20px" />
-                            </ImageContainer>
                         </SmallCircle>
                     </BigCircle>
                 </Circle>

@@ -1,7 +1,8 @@
 import Head from 'next/head'
-
 import Hero from '../components/Hero'
+import Movie from '../components/Movie'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
-
+      <Movie />
+      <Footer />
     </div>
   )
 }
