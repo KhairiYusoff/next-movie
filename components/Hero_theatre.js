@@ -26,19 +26,53 @@ flex: 5;
 `
 
 const Title = styled.p`
-font-size: 72px;
-line-height: 96px;
 font-weight: 700;
+font-size: 48px;
+line-height: 64px;
+color: #FFFFFF;
 width: 600px;
-margin: 0;
+height: 64px;
+margin-top: 0;
 `
 
-const Desc = styled.p`
-font-size: 16px;
-line-height: 32px;
+const InputContainer = styled.div`
+`
+
+const SearchInput = styled.input`
+width: 399px;
+height: 54px;
 font-weight: 400;
-width: 502px;
-color: #E6E6E6;
+font-size: 21px;
+line-height: 24px;
+background: #FFFFFF;
+border-radius: 40px;
+margin-right: 20px;
+padding: 10px;
+`
+
+const DateInput = styled.input`
+width: 176px;
+height: 54px;
+background: #FFFFFF;
+border-radius: 40px;
+font-weight: 400;
+font-size: 21px;
+line-height: 24px;
+padding: 10px;
+`
+
+const Button = styled.button`
+background: #FED530;
+border-radius: 27px;
+width: 161px;
+height: 54px;
+margin-top: 30px;
+border: none;
+font-weight: 700;
+font-size: 21px;
+line-height: 24px;
+color: #000000;
+cursor: pointer;
 `
 
 const Hero_theatre = () => {
@@ -51,13 +85,16 @@ const Hero_theatre = () => {
                     </ImageContainer>
                 </Circle>
                 <Right>
-                    <Title>Find Your Movies Here!</Title>
-                    <Desc>Explore our gallery full of exciting films from all around the globe
-                        only for your entertainments. No hidden charges or disturbing ads.</Desc>
+                    <Title>Search Your Movies Here!</Title>
+                    <InputContainer>
+                        <SearchInput type='text' placeholder='Search by theatre...' />
+                        <DateInput type='date' value='2021/12/23' />
+                    </InputContainer>
+                    <Button>Search</Button>
                 </Right>
             </Wrapper>
         </Container>
     )
 }
 
-export default Hero
+export default Hero_theatre
